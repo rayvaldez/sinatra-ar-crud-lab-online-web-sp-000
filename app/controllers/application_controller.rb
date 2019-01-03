@@ -13,7 +13,7 @@ class ApplicationController < Sinatra::Base
   end
 
   post '/articles' do
-    raise params.inspect
+    
   end
 
   get '/articles' do
