@@ -13,7 +13,12 @@ class ApplicationController < Sinatra::Base
   end
 
   post '/articles' do
-    raise params.inspect
+    @article = Article.new
+    @article.title = params[:title]
+    @article.content = params[:content]
+    @article.save
+
+    redirect 
   end
 
   get '/articles' do
