@@ -12,7 +12,7 @@ class ApplicationController < Sinatra::Base
     erb :new
   end
 
-  post '/articles/new' do
+  post '/articles' do
     raise params.inspect
   end
 
